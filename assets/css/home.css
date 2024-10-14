@@ -1,0 +1,177 @@
+nav {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+.fixed {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    padding: 20px;
+    z-index: 1;
+    border: 1px solid black;
+    background-color: white;
+    color: rgb(80, 80, 204);
+    font-size: 24px;
+}
+
+.fixed:hover {
+    background-color: rgb(80, 80, 204);
+    color: white;
+    cursor: pointer;
+}
+
+.navbar {
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden_navbar {
+    display: none;
+}
+
+.navbar_text {
+    font-size: 30px;
+    color: rgb(179, 117, 117);
+}
+
+.navbar_text:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.list {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+li {
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.clean_blog {
+  background-image: url("https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=754&fit=clip");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    min-height: 600px;
+
+}
+
+.clean_blog_header {
+    font-size: 50px;
+}
+
+.clean_blog_body {
+
+    width: 25%;
+    font-size: 25px;
+}
+
+.blogs {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.blog_heading_main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 40px;
+
+}
+
+.blog_heading:hover {
+    cursor: pointer;
+    color: rgb(88, 181, 238);
+    transition: 500ms;
+}
+
+.blog_heading_side {
+    font-size: 26px;
+    color: rgb(37, 37, 37);
+}
+
+
+.footer {
+    margin-top: 60px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer_icons i {
+    font-size: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+}
+.footer_texts{
+    font-size: 14px;
+    color:grey }
+.footer_icons i:hover {
+    background-color: rgb(88, 181, 238);
+}
+
+@media only screen and (max-width: 750px) {
+    .list {
+        display: none;
+    }
+
+    .hidden_navbar {
+        display: block;
+
+    }
+
+    .hidden_navbar i {
+
+        padding: 20px;
+        border: 1px solid black;
+    }
+
+    .hidden_navbar i:hover {
+        cursor: pointer;
+        padding: 20px;
+        border: 1px solid black;
+    }
+}
